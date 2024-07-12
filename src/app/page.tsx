@@ -4,6 +4,8 @@ import Image from "next/image";
 import Badge from "@/components/Badge";
 import { useState } from "react";
 import Flag from "@/components/Flag";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [selectedValue, setSelectedValue] = useState("avista");
@@ -14,17 +16,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen p-4">
-      <header className="flex flex-col items-center gap-10 pt-9 pb-8">
-        <Image
-          src="/woovi-logo.svg"
-          alt="Logo da Woovi"
-          width={123.51}
-          height={36.65}
-        />
-        <p className="font-extrabold text-2xl text-neutral-600">
-          João, como você quer pagar?
-        </p>
-      </header>
+      <Header title="João, como você quer pagar?" />
       <main className="flex flex-col">
         <Badge
           value="avista"
@@ -153,14 +145,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <footer className="flex justify-center mt-[41px]">
-        <Image
-          src="/footer-copywrite.svg"
-          alt="copywrite"
-          width={266}
-          height={21}
-        />
-      </footer>
+      <Footer />
     </div>
   );
 }
