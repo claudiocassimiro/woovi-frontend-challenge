@@ -2,10 +2,11 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PixInfo from "@/components/PixInfo/Index";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PaymentPix() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-4">
+    <main className="flex flex-col items-center min-h-screen p-4">
       <Header
         title="João, pague a entrada de R$ 15.300,00 pelo Pix"
         className="w-80"
@@ -18,7 +19,10 @@ export default function PaymentPix() {
           height={332}
         />
       </div>
-      <button className="mt-5 flex justify-center items-center gap-[10px] text-lg leading-6 font-semibold bg-sky-900 text-white w-[310px] h-[39px] rounded-lg">
+      <Link
+        href="/payment-confirmation"
+        className="mt-5 flex justify-center items-center gap-[10px] text-lg leading-6 font-semibold bg-sky-900 text-white w-[310px] h-[39px] rounded-lg"
+      >
         Clique para copiar QR CODE
         <Image
           src="/copy-icon.svg"
@@ -26,9 +30,9 @@ export default function PaymentPix() {
           width={19}
           height={22}
         />
-      </button>
-      <PixInfo />
+      </Link>
+      <PixInfo page="payment-pix" />
       <Footer />
-    </div>
+    </main>
   );
 }
