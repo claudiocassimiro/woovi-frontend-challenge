@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Badge from "@/components/Badge";
 import { useState } from "react";
 import Flag from "@/components/Flag";
@@ -15,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen p-4">
+    <main className="min-h-screen p-4">
       <Header title="João, como você quer pagar?" />
       <main className="flex flex-col">
         <Badge
@@ -146,6 +145,6 @@ export default function Home() {
         </div>
       </main>
       <Footer />
-    </div>
+    </main>
   );
 }
