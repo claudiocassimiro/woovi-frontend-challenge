@@ -13,11 +13,11 @@ export default function PixInfo({ page }: PixInfoProps) {
         <p className="font-extrabold text-neutral-600">15/12/2021 - 08:17</p>
       </div>
       <PaymentInformation checked={page == "payment-confirmation"} />
-      <div className="flex justify-between items-center w-[427px] mt-5 border-b-2 border-neutral-200 pb-5 font-semibold text-neutral-600">
+      <div className="flex justify-between items-center w-full max-w-[427px] mt-5 border-b-2 border-neutral-200 pb-5 font-semibold text-neutral-600">
         <p className="text-sm">CET: 0,5%</p>
         <p className="text-lg leading-6">Total: R$ 30.600,00</p>
       </div>
-      <div className="flex justify-between items-center w-[427px] mt-5 border-b-2 border-neutral-200 pb-5 font-semibold text-neutral-600">
+      <div className="flex justify-between items-center w-full max-w-[427px] mt-5 border-b-2 border-neutral-200 pb-5 font-semibold text-neutral-600">
         <p className="text-base font-extrabold leading-5">Como funciona?</p>
         <ExpandLessIcon />
       </div>

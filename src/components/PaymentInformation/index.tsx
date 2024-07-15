@@ -8,13 +8,13 @@ export default function PaymentInformation({
   checked,
 }: PaymentInformationProps) {
   return (
-    <ul className="relative w-[427px] flex flex-col items-end gap-4 mt-5 border-b-2 border-neutral-200 pb-5">
-      <li className="w-[403px] flex justify-between text-lg leading-6 text-neutral-600">
-        <span className="font-semibold">1ª entrada no Pix</span>
+    <ul className="relative w-full max-w-[427px] flex flex-col items-end gap-4 mt-5 border-b-2 border-neutral-200 pb-5">
+      <li className="w-full max-w-[427px] flex justify-between text-lg leading-6 text-neutral-600">
+        <span className="font-semibold ml-6">1ª entrada no Pix</span>
         <span className="font-extrabold">R$ 15.300,00</span>
       </li>
-      <li className="w-[403px] flex justify-between text-lg leading-6 text-neutral-600">
-        <span className="font-semibold">2ª no cartão</span>
+      <li className="w-full max-w-[427px] flex justify-between text-lg leading-6 text-neutral-600">
+        <span className="font-semibold ml-6">2ª no cartão</span>
         <span className="font-extrabold">R$ 15.300,00</span>
       </li>
       <div className="absolute left-0 bottom-[25px] flex flex-col justify-between items-center w-4 h-[54px]">

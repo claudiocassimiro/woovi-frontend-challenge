@@ -28,7 +28,7 @@ export default function PaymentConfirmationForm() {
 
   return (
     <Box
-      className="flex flex-col gap-7 w-[427px]"
+      className="flex flex-col gap-7 max-w-[427px]"
       component="form"
       autoComplete="off"
     >
