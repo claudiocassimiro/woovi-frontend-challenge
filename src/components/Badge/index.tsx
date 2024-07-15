@@ -33,22 +33,22 @@ export default function Badge({
     >
       {label ? (
         <div className="bg-neutral-200 absolute top-[-0.9rem] left-[1rem] flex justify-center items-center h-[27px] px-5  rounded-full">
-          <p className="font-extrabold text-lg leading-6 text-neutral-600">
+          <span className="font-extrabold text-lg leading-6 text-neutral-600">
             {label}
-          </p>
+          </span>
         </div>
       ) : null}
       <div className="flex justify-between items-center">
-        <p className="text-2xl font-semibold text-neutral-600">
+        <span className="text-2xl font-semibold text-neutral-600">
           {priceChildren}
-        </p>
+        </span>
         <CustomRadio
           handleChange={handleChange}
           selectedValue={selectedValue}
           value={value}
         />
       </div>
-      <p className="text-base leading-5 text-teal-500">{totalChildren}</p>
+      <span className="text-base leading-5 text-teal-500">{totalChildren}</span>
       {flagChildren ? <Flag>{flagChildren}</Flag> : null}
     </section>
   );
